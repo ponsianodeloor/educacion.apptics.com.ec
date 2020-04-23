@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-scripts.php');
 
 //cargar shortcodes
-require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-shorcodes.php');
+require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-shortcodes.php');
 
 if (is_admin()) {
  //cargar fpp
