@@ -21,11 +21,11 @@ function gvy_campo_video_callback($post){
   ?>
   <div class="envolver formulario-video">
     <div class="form-group">
-      <label for="id-video"><?php esc_html('Id Video', 'gvy_domain'); ?></label>
+      <label for="id-video"><?php esc_html_e('Id Video', 'gvy-domain'); ?></label>
       <input type="text" name="id_video" value="<?php if(!empty($gvy_video_grabar_meta['id_video'])) echo esc_attr($gvy_video_grabar_meta['id_video'][0]); ?>">
     </div>
     <div class="form-group">
-      <label for="detalles"><?php esc_html('Detalles', 'gvy_domain'); ?></label>
+      <label for="detalles"><?php esc_html_e('Detalles', 'gvy-domain'); ?></label>
       <?php
         $contenido = get_post_meta($post->ID, 'detalles', true);
         $editor = 'detalles';

@@ -1,6 +1,5 @@
-//validar si esta en la administracion
 <?php
-
+//validar si esta en la administracion
 if (is_admin()) {
  //agregar script de la administracion
  function gvy_agregar_scripts_admin(){

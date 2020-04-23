@@ -1,31 +1,37 @@
 <?php
+
 /*
-Plugin Name: Galeria de Videos Youtube
-Plugin URI: https://apptics.com.ec.org/plugins/galeria-videos-youtube/
-Description: Plugin para crear videos en youtube
-Version: 1.0
-Author: ponsianodeloor
-Author URI: http://ponsianodeloor.apptics.com.ec
-Domain Path: /languages
-Licence: GLP2
+Plugin Name:  Galería de Videos Youtube
+Plugin URI:   http://render2web.com
+Description:  Plugin para crear una galería de videos de youtube
+Version:      1.0
+Author:       render2web
+Author URI:   http://render2web.com
+License:      GPL2
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  render2web.com
+
 */
 
 
-// si se accede directamente
+//Si se accede directamente se sale
 if (!defined('ABSPATH')) {
- exit;
+	exit;
 }
 
-//cargar scripts
-require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-scripts.php');
 
-//cargar shortcodes
-require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-shortcodes.php');
+//Cargar scripts
+require_once(plugin_dir_path(__FILE__) . '/includes/galeria-videos-youtube-scripts.php');
+
+//Cargar shortcodes
+require_once(plugin_dir_path(__FILE__) . 'includes/galeria-videos-youtube-shortcodes.php');
 
 if (is_admin()) {
- //cargar fpp
- require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-fpp.php');
- //cargar campos
- require_once(plugin_dir_path(__FILE__) . '/incl/galeria-videos-youtube-campos.php');
+	//Cargar shortcodes
+require_once(plugin_dir_path(__FILE__) . 'includes/galeria-videos-youtube-fpp.php');
+
+
+//Cargar shortcodes
+require_once(plugin_dir_path(__FILE__) . 'includes/galeria-videos-youtube-campos.php');
 }
-?>
+
